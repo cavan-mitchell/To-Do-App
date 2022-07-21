@@ -9,6 +9,7 @@ addToDoButton.addEventListener("click", function () {
   paragraph.innerText = inputField.value;
 
   //This is important but why do we need to initialize inputField.value with ""?
+  //Because it will stay in the form field after, which we want to be empty to add new input.
   toDoContainer.appendChild(paragraph);
   inputField.value = "";
 
